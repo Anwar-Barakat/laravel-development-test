@@ -4,6 +4,7 @@ use App\Http\Controllers\Api\Auth\LoginController;
 use App\Http\Controllers\Api\Auth\RegisterController;
 use App\Http\Controllers\Api\Order\GetOrderController;
 use App\Http\Controllers\Api\Order\ShowOrderController;
+use App\Http\Controllers\Api\Order\UserOrderController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -27,5 +28,6 @@ Route::group(['prefix' => '/auth'], function () {
     Route::post('/login',                       LoginController::class);
 });
 
-Route::get('/orders',                       GetOrderController::class);
+// Route::get('/orders/index',                 GetOrderController::class);
 Route::get('/orders/{order_id}',            ShowOrderController::class);
+Route::get('/orders',                       UserOrderController::class);

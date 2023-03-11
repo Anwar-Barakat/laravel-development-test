@@ -10,3 +10,4 @@ The following points have been requested :
 
 - Display whole orders with its products.
 - Display the order and its details.
+- Display user orders and their details.
