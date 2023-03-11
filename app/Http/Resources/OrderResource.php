@@ -16,11 +16,12 @@ class OrderResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
-            'id'        => $this->id,
-            'user'      => new UserResource($this->user),
-            'products'  => ProductResource::collection(Product::whereIn('id', $this->products)->get()),
-            'price'     => $this->price,
-            'created'   => $this->created_at->diffForHumans()
+            'id'            => $this->id,
+            'user'          => new UserResource($this->user),
+            'products'      => ProductResource::collection(Product::whereIn('id', $this->products)->get()),
+            'price'         => $this->price,
+            'payment_type'  => new PaymentResource($this->payment),
+            'created'       => $this->created_at->diffForHumans()
         ];
     }
 }

@@ -16,6 +16,7 @@ return new class extends Migration
             $table->foreignId('user_id')->constrained('users')->cascadeOnUpdate();
             $table->string('products');
             $table->double('price');
+            $table->foreignId('payment_id')->constrained('payments')->cascadeOnUpdate();
             $table->timestamps();
         });
     }
