@@ -12,3 +12,4 @@ The following endpoints have been requested :
 - Display the order and its details.
 - Display user orders and their details.
 - Create a new order.
+- update the order only for the products.
