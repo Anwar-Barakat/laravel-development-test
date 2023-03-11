@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Product extends Model
 {
     use HasFactory;
+
+    protected $fillable = ['name'];
+
+    protected $casts = [
+        'created_at' => 'date:Y-m-d',
+    ];
 }
