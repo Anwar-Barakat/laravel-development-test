@@ -16,5 +16,5 @@ The following endpoints have been requested :
 
 - add order test methods.
 
-inside the public directory there is an image that display
-how we can create these tables via pure MySQL   
+** inside the public directory there is an image that display
+how we can create these tables via pure MySQL **   
