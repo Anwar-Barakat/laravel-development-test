@@ -12,4 +12,9 @@ The following endpoints have been requested :
 - Display the order and its details.
 - Display user orders and their details.
 - Create a new order.
-- update the order only for the products.
+- Update the order only for the products.
+
+- add order test methods.
+
+inside the public directory there is an image that display
+how we can create these tables via pure MySQL   
